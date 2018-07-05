@@ -1,0 +1,17 @@
+{
+  "name": "wisp",
+  "version": "1.0.0",
+  "description": "Whisper v6.0 tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lsaether",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.5.1"
+  }
+}
