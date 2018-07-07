@@ -4,14 +4,21 @@
   "description": "Whisper v6.0 tool",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -r ts-node/register test/*"
   },
   "author": "Lsaether",
   "license": "GPL-3.0",
   "dependencies": {
-    "axios": "^0.18.0"
+    "@types/axios": "^0.14.0",
+    "axios": "^0.18.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "ts-node": "7.0.0",
+    "typescript": "2.9.2"
   },
   "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.4",
     "@types/node": "^10.5.1"
   }
 }

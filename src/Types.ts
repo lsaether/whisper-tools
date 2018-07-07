@@ -1,5 +1,3 @@
-import { Key } from "readline";
-
 export type Bytes32 = string;
 
 // Pubkey is 64 bytes
