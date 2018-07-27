@@ -2,7 +2,7 @@
   "name": "whisper-tools",
   "version": "0.0.1",
   "description": "Whisper v6.0 tool",
-  "main": "src/index.ts",
+  "main": "index.js",
   "scripts": {
     "generate": "ts-node src/genWhisperApi.ts",
     "test": "mocha -r ts-node/register test/*"
