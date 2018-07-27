@@ -43,7 +43,7 @@ const WHISPER_METHODS: IMethod[] = [
   // { name: 'shh_unsubscribe', args: '', return: '' },
 ];
 
-const heading = `import axios from 'axios';
+const heading = `import axios from "axios";
 
 import {
   Bytes32,
@@ -56,7 +56,7 @@ import {
   PubKey,
   SymKey,
   SymKeyId,
-} from './Types';
+} from "./Types";
 
 export default class WhisperApi {
   public provider: string;
@@ -72,8 +72,8 @@ WHISPER_METHODS.forEach((method: IMethod) => {
   public async ${method.name.slice(4)}(${method.args ? method.args : "" }): Promise<${method.return}> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: '${method.name}',
+      jsonrpc: "2.0",
+      method: "${method.name}",
       params: [${method.args ? method.args.split(":")[0] : "" }],
     };
 
@@ -86,6 +86,6 @@ WHISPER_METHODS.forEach((method: IMethod) => {
   }`);
 });
 
-const close = "\n}";
+const close = "\n}\n";
 
 fs.writeFileSync("src/WhisperApi.ts", heading + methods.join("\n") + close);

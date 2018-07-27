@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 
 import {
   Bytes32,
@@ -11,7 +11,7 @@ import {
   PubKey,
   SymKey,
   SymKeyId,
-} from './Types';
+} from "./Types";
 
 export default class WhisperApi {
   public provider: string;
@@ -23,8 +23,8 @@ export default class WhisperApi {
   public async info(): Promise<IInfo> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_info',
+      jsonrpc: "2.0",
+      method: "shh_info",
       params: [],
     };
 
@@ -39,8 +39,8 @@ export default class WhisperApi {
   public async version(): Promise<string> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_version',
+      jsonrpc: "2.0",
+      method: "shh_version",
       params: [],
     };
 
@@ -55,8 +55,8 @@ export default class WhisperApi {
   public async newKeyPair(): Promise<KeyId> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_newKeyPair',
+      jsonrpc: "2.0",
+      method: "shh_newKeyPair",
       params: [],
     };
 
@@ -71,8 +71,8 @@ export default class WhisperApi {
   public async getPrivateKey(keyId: KeyId): Promise<PrivKey> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_getPrivateKey',
+      jsonrpc: "2.0",
+      method: "shh_getPrivateKey",
       params: [keyId],
     };
 
@@ -87,8 +87,8 @@ export default class WhisperApi {
   public async addPrivateKey(privateKey: PrivKey): Promise<KeyId> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_addPrivateKey',
+      jsonrpc: "2.0",
+      method: "shh_addPrivateKey",
       params: [privateKey],
     };
 
@@ -103,8 +103,8 @@ export default class WhisperApi {
   public async deleteKeyPair(keyId: KeyId): Promise<boolean> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_deleteKeyPair',
+      jsonrpc: "2.0",
+      method: "shh_deleteKeyPair",
       params: [keyId],
     };
 
@@ -119,8 +119,8 @@ export default class WhisperApi {
   public async hasKeyPair(keyId: KeyId): Promise<boolean> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_hasKeyPair',
+      jsonrpc: "2.0",
+      method: "shh_hasKeyPair",
       params: [keyId],
     };
 
@@ -135,8 +135,8 @@ export default class WhisperApi {
   public async getPublicKey(keyId: KeyId): Promise<PubKey> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_getPublicKey',
+      jsonrpc: "2.0",
+      method: "shh_getPublicKey",
       params: [keyId],
     };
 
@@ -151,8 +151,8 @@ export default class WhisperApi {
   public async newSymKey(): Promise<SymKeyId> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_newSymKey',
+      jsonrpc: "2.0",
+      method: "shh_newSymKey",
       params: [],
     };
 
@@ -167,8 +167,8 @@ export default class WhisperApi {
   public async addSymKey(symKey: SymKey): Promise<SymKeyId> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_addSymKey',
+      jsonrpc: "2.0",
+      method: "shh_addSymKey",
       params: [symKey],
     };
 
@@ -183,8 +183,8 @@ export default class WhisperApi {
   public async hasSymKey(keyId: SymKeyId): Promise<boolean> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_hasSymKey',
+      jsonrpc: "2.0",
+      method: "shh_hasSymKey",
       params: [keyId],
     };
 
@@ -199,8 +199,8 @@ export default class WhisperApi {
   public async getSymKey(keyId: SymKeyId): Promise<SymKey> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_getSymKey',
+      jsonrpc: "2.0",
+      method: "shh_getSymKey",
       params: [keyId],
     };
 
@@ -215,8 +215,8 @@ export default class WhisperApi {
   public async generateSymKeyFromPassword(password: string): Promise<SymKeyId> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_generateSymKeyFromPassword',
+      jsonrpc: "2.0",
+      method: "shh_generateSymKeyFromPassword",
       params: [password],
     };
 
@@ -231,8 +231,8 @@ export default class WhisperApi {
   public async deleteSymKey(keyId: SymKeyId): Promise<boolean> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_deleteSymKey',
+      jsonrpc: "2.0",
+      method: "shh_deleteSymKey",
       params: [keyId],
     };
 
@@ -247,8 +247,8 @@ export default class WhisperApi {
   public async post(message: IWhisperPost): Promise<string> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_post',
+      jsonrpc: "2.0",
+      method: "shh_post",
       params: [message],
     };
 
@@ -263,8 +263,8 @@ export default class WhisperApi {
   public async newMessageFilter(filter: IFilter): Promise<Bytes32> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_newMessageFilter',
+      jsonrpc: "2.0",
+      method: "shh_newMessageFilter",
       params: [filter],
     };
 
@@ -279,8 +279,8 @@ export default class WhisperApi {
   public async deleteMessageFilter(filterId: Bytes32): Promise<any> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_deleteMessageFilter',
+      jsonrpc: "2.0",
+      method: "shh_deleteMessageFilter",
       params: [filterId],
     };
 
@@ -295,8 +295,8 @@ export default class WhisperApi {
   public async getFilterMessages(filterId: Bytes32): Promise<IFilterMsg[]> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_getFilterMessages',
+      jsonrpc: "2.0",
+      method: "shh_getFilterMessages",
       params: [filterId],
     };
 
@@ -311,8 +311,8 @@ export default class WhisperApi {
   public async setMaxMessageSize(maxSize: number): Promise<boolean> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_setMaxMessageSize',
+      jsonrpc: "2.0",
+      method: "shh_setMaxMessageSize",
       params: [maxSize],
     };
 
@@ -327,8 +327,8 @@ export default class WhisperApi {
   public async setMinPoW(minPoW: number): Promise<boolean> {
     const rpcRequest = {
       id: Date.now(),
-      jsonrpc: '2.0',
-      method: 'shh_setMinPoW',
+      jsonrpc: "2.0",
+      method: "shh_setMinPoW",
       params: [minPoW],
     };
 
