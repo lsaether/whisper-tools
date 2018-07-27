@@ -5,8 +5,9 @@
   "main": "index.js",
   "types": "./build/src/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "generate": "ts-node src/genWhisperApi.ts",
-    "postinstall": "tsc",
+    "postinstall": "npm run build",
     "test": "mocha -r ts-node/register test/*"
   },
   "author": "Lsaether",
