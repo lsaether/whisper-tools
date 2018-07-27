@@ -1,6 +1,8 @@
 {
   "include": [
-    "./src/index.ts"
+    "./src/index.ts",
+    "./src/Types.ts",
+    "./src/WhisperApi.ts"
   ],
   "compilerOptions": {
     /* Basic Options */
