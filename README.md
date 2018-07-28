@@ -37,7 +37,7 @@ Notice! You must be running geth with the following flags enabled to use this li
 geth --shh --rpc --nodiscover
 ```
 
-You can remove `--nodiscover` if you would like to try to connect to other nodes. But be wary, it will also start syncing the Ethereum mainnet.
+You can remove `--nodiscover` if you would like to try to connect to other nodes. But be wary, it will also start syncing the Ethereum mainnet. Additionally, if you are using this library from a development server (such as webpack) you will need to enable cors on geth with this flag `--rpccorsdomain "*"`.
 
 ## FAQs
 
