@@ -43,4 +43,4 @@ You can remove `--nodiscover` if you would like to try to connect to other nodes
 
 **Doesn't the web3.js library have whisper?**
 
-Yes. This is an alternative that *may* be better for your use case, if you intend to only use Whisper and not the other functionality that web3 brings in.
+Yes. This is an alternative that *may* be better for your use case, if you intend to only use Whisper and not the other functionality that web3 brings in. This package also uses the latest v.6.0 Whisper API used in geth, while web3.js used the older v.5.0 API (at the time of writing).
