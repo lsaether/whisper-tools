@@ -28,7 +28,10 @@ export default class WhisperApi {
       params: [],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -44,7 +47,10 @@ export default class WhisperApi {
       params: [],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -60,7 +66,10 @@ export default class WhisperApi {
       params: [],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -76,7 +85,10 @@ export default class WhisperApi {
       params: [keyId],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -92,7 +104,10 @@ export default class WhisperApi {
       params: [privateKey],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -108,7 +123,10 @@ export default class WhisperApi {
       params: [keyId],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -124,7 +142,10 @@ export default class WhisperApi {
       params: [keyId],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -140,7 +161,10 @@ export default class WhisperApi {
       params: [keyId],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -156,7 +180,10 @@ export default class WhisperApi {
       params: [],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -172,7 +199,10 @@ export default class WhisperApi {
       params: [symKey],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -188,7 +218,10 @@ export default class WhisperApi {
       params: [keyId],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -204,7 +237,10 @@ export default class WhisperApi {
       params: [keyId],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -220,7 +256,10 @@ export default class WhisperApi {
       params: [password],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -236,7 +275,10 @@ export default class WhisperApi {
       params: [keyId],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -252,7 +294,10 @@ export default class WhisperApi {
       params: [message],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -268,7 +313,10 @@ export default class WhisperApi {
       params: [filter],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -284,7 +332,10 @@ export default class WhisperApi {
       params: [filterId],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -300,7 +351,10 @@ export default class WhisperApi {
       params: [filterId],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -316,7 +370,10 @@ export default class WhisperApi {
       params: [maxSize],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
@@ -332,7 +389,10 @@ export default class WhisperApi {
       params: [minPoW],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }

@@ -77,7 +77,10 @@ WHISPER_METHODS.forEach((method: IMethod) => {
       params: [${method.args ? method.args.split(":")[0] : "" }],
     };
 
-    const { data } = await axios.post(this.provider, rpcRequest);
+    const { data } = await axios.post(this.provider, rpcRequest, {
+      headers: {"Access-Control-Allow-Origin": "*"},
+      timeout: 20000,
+    });
     if (data.error) {
       throw data.error.message;
     }
