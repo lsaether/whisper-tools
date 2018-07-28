@@ -1,6 +1,6 @@
 {
   "name": "whisper-tools",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Whisper v6.0 tool",
   "main": "index.js",
   "types": "./build/index.d.ts",
