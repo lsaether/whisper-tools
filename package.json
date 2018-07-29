@@ -7,7 +7,6 @@
   "scripts": {
     "build": "tsc --project ./",
     "generate": "ts-node src/genWhisperApi.ts",
-    "postinstall": "npm run build",
     "test": "mocha -r ts-node/register test/*"
   },
   "author": "Lsaether",
